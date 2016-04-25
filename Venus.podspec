@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 		:text => '"Copyright 2016 Caishi Inc. All rights reserved.'
   }
   s.author           = 'Caishi'
-  s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => 's.version.to_s' }
+  s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => "1.0.1" }
   s.preserve_paths = 'Venus-1.0.0'
 
   s.ios.deployment_target = '7.0'
