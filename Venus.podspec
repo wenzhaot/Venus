@@ -11,8 +11,12 @@ Pod::Spec.new do |s|
   s.version          = "1.0.0"
 
   s.homepage         = "https://github.com/wenzhaot/Venus"
+  s.summary          = "Venus"
 
-  s.license          = 'MIT'
+  s.license          = {
+    :type => 'Caishi',
+		:text => '"Copyright 2016 Caishi Inc. All rights reserved.'
+  }
   s.author           = { "wenzhaot" => "tanwenzhao1025@gmail.com" }
   s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => s.version.to_s }
   s.preserve_paths = 'Venus-1.0.0'
@@ -22,7 +26,7 @@ Pod::Spec.new do |s|
 		'FRAMEWORK_SEARCH_PATHS' => "$(PODS_ROOT)/Venus/Venus-1.0.0/**"
 	}
 
-  s.source_files = 'Venus.framework/Headers/*.{h}'
+  s.source_files = 'Venus-1.0.0/Venus.framework/Headers/*.{h}'
   s.framework = 'Venus'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
