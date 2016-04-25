@@ -17,19 +17,15 @@ Pod::Spec.new do |s|
     :type => 'Caishi',
 		:text => '"Copyright 2016 Caishi Inc. All rights reserved.'
   }
-  s.author           = { "wenzhaot" => "tanwenzhao1025@gmail.com" }
+  s.author           = 'Caishi'
   s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => s.version.to_s }
   s.preserve_paths = 'Venus-1.0.0'
 
   s.ios.deployment_target = '7.0'
-  s.xcconfig = {
-		'FRAMEWORK_SEARCH_PATHS' => "$(PODS_ROOT)/Venus/Venus-1.0.0/**"
-	}
 
-  s.source_files = 'Venus-1.0.0/Venus.framework/Headers/*.{h}'
-  s.framework = 'Venus'
+  s.public_header_files = 'Venus-1.0.0/Venus.framework/Headers/*.{h}'
+  s.vendored_frameworks = 'Venus-1.0.0/Venus.framework'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc = true
+  
 end
