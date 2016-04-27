@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Venus"
-  s.version          = "1.0.2"
+  s.version          = "0.1.0"
 
   s.homepage         = "https://github.com/wenzhaot/Venus"
   s.summary          = "Venus"
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 		:text => '"Copyright 2016 Caishi Inc. All rights reserved.'
   }
   s.author           = 'Caishi'
-  s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => "1.0.2" }
-  s.preserve_paths = 'Venus-1.0.0'
+  s.source           = { :git => "https://github.com/wenzhaot/Venus.git", :tag => s.version.to_s }
+  s.preserve_paths = 'Venus-0.1.0'
 
   s.ios.deployment_target = '7.0'
 
-  s.public_header_files = 'Venus-1.0.0/Venus.framework/Headers/*.{h}'
-  s.vendored_frameworks = 'Venus-1.0.0/Venus.framework'
+  s.public_header_files = 'Venus-0.1.0/Venus.framework/Headers/*.{h}'
+  s.vendored_frameworks = 'Venus-0.1.0/Venus.framework'
 
   s.requires_arc = true
 
